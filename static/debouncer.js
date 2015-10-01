@@ -13,10 +13,8 @@ $(document).ready(function() {
       return function() {
         if (id) {
             clearTimeout(id);
-            id = null;
-        } else {
-            id = setTimeout(F, 1000);
         }
+        id = setTimeout(F, 1000);
       }
   }
 });
